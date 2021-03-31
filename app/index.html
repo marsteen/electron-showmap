@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+
+    <title>Diercke Atlas Web >> Südamerika Wirtschaft</title>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    
+    
+    <!--
+    <link rel="stylesheet" href="https://openlayers.org/en/v5.0.0/css/ol.css" type="text/css">
+    <script src="https://openlayers.org/en/v5.0.0/build/ol.js"></script>
+    -->
+
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+    <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
+
+    
+    
+    <style>
+      .rotate-north 
+      {
+        top:     4.5em;        
+        left:    0.5em;        
+      }
+      
+      .ol-touch .rotate-north 
+      {
+        top: 4.5em;
+        left: .5em;
+      }
+      
+      .ol-menu
+      {
+        z-index: 9999;
+        top:  10.0em;
+        left: 10.2em;
+      }
+
+		</style>
+		
+		<style>
+
+		#left 
+		{
+			width: 140px;
+			float: left;
+			margin-left: -1px;
+			padding: 5px;
+			background: #9FC5DC;
+		}
+
+		
+		#right 
+		{
+			padding: 8px;
+			margin-left: 140px;
+			background: black;
+		}
+	</style>
+
+		
+		
+    
+  </head>
+  <body bgcolor="black">
+  
+  
+  <div id="left" style="height: 100%; position:fixed">
+	<!-- Left area -->
+	<img src="App_icon_512_da.png" width="140">
+	<p>
+<form> 
+  <fieldset>
+   <legend>
+   <font size="2">
+   &nbsp;&nbsp;Ebenen&nbsp;&nbsp;
+   </font>
+   </legend>
+				<font size="2">	
+        
+				<table>
+				       <tr><td><input type="checkbox" id="Bodenbedeckung" checked></td>
+                   <td>Boden</td>
+               </tr>
+				       <tr><td><input type="checkbox" id="Linien" checked></td>
+                   <td>Linien</td>
+               </tr>
+				       <tr><td><input type="checkbox" id="Symbole" checked></td>
+                   <td>Symbole</td>
+               </tr>
+				       <tr><td><input type="checkbox" id="Beschriftung" checked></td>
+                   <td>Schrift</td>
+               </tr>
+       </table>               
+        
+        
+        </font>
+  </fieldset> 
+</form>
+  
+  
+	
+	<!-- <button type="button">Passwort <span class="hinweis">ändern!</span></button> -->
+	
+	
+	
+	</div>
+	<div id="right">
+	    <div id="map" class="map" style="width: 100%; height: 100%; position:fixed"></div> <!-- 100% fuer die volle Groesse der Map -->    
+	    
+		  
+	    
+		  <script src="openlayers.js"></script>
+		  
+		  <!--
+	    <div class="ol-menu ol-unselectable ol-control">
+        <button class="ol-menu" type="button" id="MenuButton" title="Menu an/aus" onclick="SwitchMenuFunc()">X</button>        
+      </div>		  
+      -->
+		  
+      
+	</div>
+
+	
+  </body>
+</html>
